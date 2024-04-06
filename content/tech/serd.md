@@ -20,7 +20,7 @@ serdes是英文serializer/deserializer的简称<br />在发送端多路低速并
 ### 源同步缺陷
 TX把时钟和数据一起发送<br />时钟和数据保持相同的路径。<br />SSN（同步开关噪声）成为提高传输带宽的瓶颈。
 
-![image.png](images/serdex_ex.png)
+![image.png](/images/serdex_ex.png)
 
 <a name="ehj7Q"></a>
 # Serders技术
