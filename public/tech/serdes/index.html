@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <title> - My New Hugo Site</title><meta name="Description" content="This is my cool site"><meta property="og:title" content="" />
+<meta property="og:description" content="serdes是英文serializer/deserializer的简称在发送端多路低速并行信号转换成高速串行信号，经过传输后，在接收端高速串行型号转换为低速并行型号。 可以有效地减小传输信道和器件引脚，方便芯片信号同步。
+在serders出现之前，信号同步主要是通过系统同步和源同步来传输数据的。
+第一个是系统同步，第二个是源同步。这两者不适用于高速信号同步。有着固有的缺陷。 系统同步缺陷 有三个问题
+时钟信号到达两个芯片的时间不一样 数据信号到达两个芯片的时间不一样 时钟和数据的延迟不一样 所以这两种不适用于高速信号传输。虽然可以通过芯片内部的PLL来补偿时钟延迟和数据延迟，但是。 源同步缺陷 TX把时钟和数据一起发送时钟和数据保持相同的路径。SSN（同步开关噪声）成为提高传输带宽的瓶颈。
+Serders技术 需要参考时钟 需要在数据内内嵌时钟 引脚少 通过均衡技术实现长距离传输 数据采样差分传输serders在TX端不传送直接的时钟信号，在RX端利用CDR电路从数据的边缘抽取时钟，并且找到最优采样位置。" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://blog.hotheart48156.io/tech/serdes/" /><meta property="article:section" content="tech" />
+
+<meta property="og:site_name" content="My cool site" />
+<meta name="twitter:card" content="summary"/><meta name="twitter:title" content=""/>
+<meta name="twitter:description" content="serdes是英文serializer/deserializer的简称在发送端多路低速并行信号转换成高速串行信号，经过传输后，在接收端高速串行型号转换为低速并行型号。 可以有效地减小传输信道和器件引脚，方便芯片信号同步。
+在serders出现之前，信号同步主要是通过系统同步和源同步来传输数据的。
+第一个是系统同步，第二个是源同步。这两者不适用于高速信号同步。有着固有的缺陷。 系统同步缺陷 有三个问题
+时钟信号到达两个芯片的时间不一样 数据信号到达两个芯片的时间不一样 时钟和数据的延迟不一样 所以这两种不适用于高速信号传输。虽然可以通过芯片内部的PLL来补偿时钟延迟和数据延迟，但是。 源同步缺陷 TX把时钟和数据一起发送时钟和数据保持相同的路径。SSN（同步开关噪声）成为提高传输带宽的瓶颈。
+Serders技术 需要参考时钟 需要在数据内内嵌时钟 引脚少 通过均衡技术实现长距离传输 数据采样差分传输serders在TX端不传送直接的时钟信号，在RX端利用CDR电路从数据的边缘抽取时钟，并且找到最优采样位置。"/>
+<meta name="application-name" content="My cool site">
+<meta name="apple-mobile-web-app-title" content="My cool site"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://blog.hotheart48156.io/tech/serdes/" /><link rel="next" href="https://blog.hotheart48156.io/tech/layout/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css"></noscript><link rel="preload" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css"></noscript><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "",
+        "inLanguage": "en",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/blog.hotheart48156.io\/tech\/serdes\/"
+        },"genre": "tech","wordcount":  18 ,
+        "url": "https:\/\/blog.hotheart48156.io\/tech\/serdes\/","publisher": {
+            "@type": "Organization",
+            "name": ""},"author": {
+                "@type": "Person",
+                "name": "xxxx"
+            },"description": ""
+    }
+    </script></head>
+    <body data-header-desktop="fixed" data-header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="My New Hugo Site">My cool site</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> Posts </a><a class="menu-item" href="/tags/"> Tags </a><a class="menu-item" href="/categories/"> Categories </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="Clear">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+                </a></div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="My New Hugo Site">My cool site</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="Search">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="Clear">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        Cancel
+                    </a>
+                </div><a class="menu-item" href="/posts/" title="">Posts</a><a class="menu-item" href="/tags/" title="">Tags</a><a class="menu-item" href="/categories/" title="">Categories</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a></div>
+    </div>
+</header><div class="search-dropdown desktop">
+        <div id="search-dropdown-desktop"></div>
+    </div>
+    <div class="search-dropdown mobile">
+        <div id="search-dropdown-mobile"></div>
+    </div><main class="main">
+                <div class="container"><div class="page single special"><h1 class="single-title animate__animated animate__pulse animate__faster"></h1><div class="content" id="content"><p>serdes是英文serializer/deserializer的简称<!-- raw HTML omitted -->在发送端多路低速并行信号转换成高速串行信号，经过传输后，在接收端高速串行型号转换为低速并行型号。  可以有效地减小传输信道和器件引脚，方便芯片信号同步。</p>
+<p>在serders出现之前，信号同步主要是通过系统同步和源同步来传输数据的。</p>
+<p>第一个是系统同步，第二个是源同步。<!-- raw HTML omitted -->这两者不适用于高速信号同步。有着固有的缺陷。
+<!-- raw HTML omitted --><!-- raw HTML omitted --></p>
+<h3 id="系统同步缺陷">系统同步缺陷</h3>
+<p>有三个问题</p>
+<ol>
+<li>时钟信号到达两个芯片的时间不一样</li>
+<li>数据信号到达两个芯片的时间不一样</li>
+<li>时钟和数据的延迟不一样</li>
+</ol>
+<p>所以这两种不适用于高速信号传输。<!-- raw HTML omitted -->虽然可以通过芯片内部的PLL来补偿时钟延迟和数据延迟，但是。
+<!-- raw HTML omitted --><!-- raw HTML omitted --></p>
+<h3 id="源同步缺陷">源同步缺陷</h3>
+<p>TX把时钟和数据一起发送<!-- raw HTML omitted -->时钟和数据保持相同的路径。<!-- raw HTML omitted -->SSN（同步开关噪声）成为提高传输带宽的瓶颈。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://cdn.nlark.com/yuque/0/2024/png/580638/1712396753086-e545af0b-7330-4315-8e52-6e00231e18d4.png#averageHue=%23fafafa&amp;clientId=u50d95f38-d11e-4&amp;from=paste&amp;height=579&amp;id=u507b6c25&amp;originHeight=724&amp;originWidth=862&amp;originalType=binary&amp;ratio=1.25&amp;rotation=0&amp;showTitle=false&amp;size=164079&amp;status=done&amp;style=none&amp;taskId=u3c2b4ba4-d08f-4843-9b5a-eb60fa3b72f&amp;title=&amp;width=689.6"
+        data-srcset="https://cdn.nlark.com/yuque/0/2024/png/580638/1712396753086-e545af0b-7330-4315-8e52-6e00231e18d4.png#averageHue=%23fafafa&amp;clientId=u50d95f38-d11e-4&amp;from=paste&amp;height=579&amp;id=u507b6c25&amp;originHeight=724&amp;originWidth=862&amp;originalType=binary&amp;ratio=1.25&amp;rotation=0&amp;showTitle=false&amp;size=164079&amp;status=done&amp;style=none&amp;taskId=u3c2b4ba4-d08f-4843-9b5a-eb60fa3b72f&amp;title=&amp;width=689.6, https://cdn.nlark.com/yuque/0/2024/png/580638/1712396753086-e545af0b-7330-4315-8e52-6e00231e18d4.png#averageHue=%23fafafa&amp;clientId=u50d95f38-d11e-4&amp;from=paste&amp;height=579&amp;id=u507b6c25&amp;originHeight=724&amp;originWidth=862&amp;originalType=binary&amp;ratio=1.25&amp;rotation=0&amp;showTitle=false&amp;size=164079&amp;status=done&amp;style=none&amp;taskId=u3c2b4ba4-d08f-4843-9b5a-eb60fa3b72f&amp;title=&amp;width=689.6 1.5x, https://cdn.nlark.com/yuque/0/2024/png/580638/1712396753086-e545af0b-7330-4315-8e52-6e00231e18d4.png#averageHue=%23fafafa&amp;clientId=u50d95f38-d11e-4&amp;from=paste&amp;height=579&amp;id=u507b6c25&amp;originHeight=724&amp;originWidth=862&amp;originalType=binary&amp;ratio=1.25&amp;rotation=0&amp;showTitle=false&amp;size=164079&amp;status=done&amp;style=none&amp;taskId=u3c2b4ba4-d08f-4843-9b5a-eb60fa3b72f&amp;title=&amp;width=689.6 2x"
+        data-sizes="auto"
+        alt="https://cdn.nlark.com/yuque/0/2024/png/580638/1712396753086-e545af0b-7330-4315-8e52-6e00231e18d4.png#averageHue=%23fafafa&amp;clientId=u50d95f38-d11e-4&amp;from=paste&amp;height=579&amp;id=u507b6c25&amp;originHeight=724&amp;originWidth=862&amp;originalType=binary&amp;ratio=1.25&amp;rotation=0&amp;showTitle=false&amp;size=164079&amp;status=done&amp;style=none&amp;taskId=u3c2b4ba4-d08f-4843-9b5a-eb60fa3b72f&amp;title=&amp;width=689.6"
+        title="image.png" /></p>
+<p><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
+<h1 id="serders技术">Serders技术</h1>
+<p><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
+<h4 id="需要参考时钟">需要参考时钟</h4>
+<ol>
+<li>需要在数据内内嵌时钟</li>
+<li>引脚少</li>
+<li>通过均衡技术实现长距离传输</li>
+</ol>
+<p>数据采样差分传输<!-- raw HTML omitted -->serders在TX端不传送直接的时钟信号，在RX端利用CDR电路从数据的边缘抽取时钟，并且找到最优采样位置。</p>
+</div></div></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.124.1">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.11"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden="true"></i> LoveIt</a>
+                </div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2022 - 2024</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank">xxxx</a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up fa-fw" aria-hidden="true"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
+            </a>
+        </div><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/autocomplete.js@0.38.1/dist/autocomplete.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lunr@2.3.9/lunr.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sharer.js@0.5.1/sharer.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":50},"comment":{},"search":{"highlightTag":"em","maxResultLength":10,"noResultsFound":"No results found","snippetLength":30}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+</html>
